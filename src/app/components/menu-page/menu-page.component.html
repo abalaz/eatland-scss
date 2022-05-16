@@ -1,0 +1,19 @@
+<div class="all-items">
+  <div class="all-items-left">
+    <p class="text-all-item"> Menu </p>
+  </div>
+</div>
+<div class="items" >
+  <div class="items-food" *ngFor="let list of listData">
+    <img class="picture"  src="../../../assets/{{list.img}}" alt="">
+    <div class="name-item">{{list.name}}</div>
+    <p class="objects">{{list.des}}</p>
+    <div class="money">
+      <h5 class="test-money">
+        ${{list.price}}
+      </h5>
+      <span *ngIf="!list.check" class="fa fa-plus icon-custom" (click)="unLike(list)"></span>
+      <span *ngIf="list.check" class="fa fa-check icon-custom" (click)="like(list)"></span>
+    </div>
+  </div>
+</div>

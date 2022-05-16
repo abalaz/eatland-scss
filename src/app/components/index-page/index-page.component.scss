@@ -1,0 +1,139 @@
+.all-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9%;
+
+    .all-items-left {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width:28%;
+
+        .text-all-item {
+          font-weight: 900;
+          font-size: 22px;
+          margin-top: 12px;
+        }
+    }
+
+    .all-items-right {
+      width: 22%;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: space-around;
+      margin-right: 30px;
+
+        .text-all-item-left {
+          transform: translatey(10px);
+          width: 78px;
+          height: 46%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+        }
+
+        .chang-menu{
+          background: #ebf3fe;
+          display: flex;
+          width: 40px;
+          height: 30px;
+          border-radius: 9px;
+          align-items: center;
+          justify-content: center;
+        }
+    }
+}
+
+.items {
+  width: 100%;
+  height: 68%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+    .items-food {
+      width: 29%;
+      height: 33%;
+      margin-top: 18px;
+      background-color: #f4f9ff;
+      border-radius: 32px;
+      margin-bottom: 32px;
+      transform: translateY(29px);
+
+        &.hidden {
+          display: none;
+        }
+
+        &.show {
+          display: block;
+        }
+
+        .picture{
+          width: 100px;
+          height: 86px;
+          transform: translate(24px, -46px);
+        }
+
+        .name-item {
+          transform: translate(20px, -50px);
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 120px;
+          overflow: hidden;
+          font-weight: 800;
+          font-size: large;
+        }
+
+        .objects {
+          transform: translate(20px, -49px);
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 100px;
+          overflow: hidden;
+          font-size: smaller;
+        }
+
+        .money {
+          transform: translate(21px, -62px);
+          display: flex;
+          justify-content: space-between;
+          align-items: stretch;
+          width: 76%;
+          font-size: smaller;
+
+            .test-money {
+              font-size: 17px;
+              font-weight: 700;
+            }
+
+            .fa-plus {
+              width: 20%;
+              height: 20px;
+              background: #30334f;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #fff;
+            }
+
+            .fa-check {
+              width: 20%;
+              height: 20px;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #30334f;
+              border: 2px solid #30334f;
+            }
+        }
+
+
+    }
+}

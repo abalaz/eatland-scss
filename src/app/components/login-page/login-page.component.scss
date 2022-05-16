@@ -1,0 +1,103 @@
+$fontstyle_text : 'Roboto', sans-serif;
+.wrapper {
+  width: 100vw;
+  background-image: linear-gradient(to top right, #ddd6e9, #d0d6f7);
+  height: 100vh;
+  padding-top: 42px;
+  box-sizing: border-box;
+    .content {
+      width: 80%;
+      background: #efecff;
+      height: 80vh;
+      margin: 0px auto;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 50px 225px;
+      box-shadow: #d0d6f7;
+
+        .left {
+          width: 50%;
+          background-repeat: no-repeat;
+          object-fit: cover;
+
+            .img-bg {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 40px 0px 0px 210px;
+            }
+        }
+
+        .right {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+
+            .header {
+              font-weight: 100;
+              font-size: unset;
+              font-family: $fontstyle_text;
+              margin: 100px 60px 0px 60px;
+            }
+
+            .unline-header {
+              font-family: $fontstyle_text;
+              margin: -2px 60px 40px 62px;
+              color: #8080808f;
+            }
+
+            .list-login {
+              margin: 0px 60px 32px 60px;
+
+                .box {
+                  margin: 5px 0px 36px 0px;
+                  border: none;
+                  font-family: 'Roboto', sans-serif;
+                  border: none;
+
+                    .login-title {
+                      margin: 0px 0px 3px 0px;
+                      font-family: 'Roboto', sans-serif;
+                    }
+
+                    .input{
+
+                      width: 100%;
+                      height: 3vh;
+                      border: 1px solid #a9a9a959;
+                      border-radius: 5px;
+                      text-indent: 10px;
+                      font-family: 'Roboto', sans-serif;
+                      font-size: medium;
+                    }
+                }
+
+            }
+
+            .btn-login {
+              margin: -32px 2px 3px 60px;
+                button{
+
+                  &.btn_button {
+                  width: 100px;
+                  height: 30px;
+                  border-radius: 36px;
+                  border: none;
+                  background-color: #5e4aa1;
+                  color: white;
+                  font-size: medium;
+                  font-family: $fontstyle_text;
+                  transition: width 0s, height 0s;
+                  }
+                  &:hover{
+                    width: 102px;
+                    height: 32px;
+                  }
+                  &:focus{
+                    outline: none;
+                  }
+                }
+            }
+        }
+    }
+}

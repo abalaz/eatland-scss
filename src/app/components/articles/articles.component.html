@@ -1,0 +1,26 @@
+<div class="listNews">
+
+  <div class="left-news">
+    <div class="news" *ngFor="let list of listDataRight">
+      <div class="imge-news">
+        <img class="imge" src="../../../assets/{{list.img}}" alt="">
+      </div>
+      <div class="content-news">
+        <h4 class="test">{{list.name}}</h4>
+        <p class="test-inline">{{list.des}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="right-news">
+    <div class="news" *ngFor=" let listleft of listDataLeft">
+      <div class="imge-news">
+        <img class="imge" src="../../../assets/{{listleft.img}}" alt="">
+      </div>
+      <div class="content-news">
+        <h4 class="test">{{listleft.name}}</h4>
+        <p class="test-inline">{{listleft.des}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
